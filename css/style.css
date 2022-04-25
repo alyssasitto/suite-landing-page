@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap");
+
+:root {
+	--dark-blue: #172339;
+	--dark-grey-blue: #49566d;
+	--light-beige: #f3ede7;
+	--white: #fff;
+	--off-white: #faf8f6;
+	--bright-violet: #a060ff;
+	--bright-fushia: #cb30e3;
+	--orange: #ffa84e;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/********** MAIN STYLES **********/
+
+body {
+	min-height: 100vh;
+	font-family: "Epilogue", sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	padding: 1.5rem;
+	border-radius: 5px;
+	font-family: "Epilogue", sans-serif;
+	font-weight: 700;
+}
+
+/********** NAV STYLES **********/
+
+.nav {
+	padding: 2.5rem 1.5rem 0;
+	margin-bottom: 8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.nav-button {
+	border: 1px solid var(--dark-blue);
+	color: var(--dark-blue);
+	background-color: var(--white);
+}
+
+.nav-button:hover {
+	color: var(--off-white);
+	background-color: var(--dark-blue);
+	cursor: pointer;
+}
+
+/********** HEADER STYLES **********/
+
+.header {
+	position: relative;
+	min-width: 100%;
+	align-self: center;
+	padding: 0 1.5rem;
+}
+
+.heading {
+	margin-bottom: 3rem;
+	font-size: 4rem;
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: -1px;
+}
+
+.heading span {
+	font-weight: 700;
+}
+
+.header-description {
+	margin-bottom: 3rem;
+	font-size: 1.5rem;
+	word-spacing: 3px;
+	line-height: 1.7;
+	color: var(--dark-grey-blue);
+}
+
+.header-button {
+	margin-bottom: 5rem;
+	color: var(--white);
+	background-color: var(--dark-blue);
+	border: none;
+}
+
+.header-button:hover {
+	background-image: linear-gradient(
+		to bottom right,
+		var(--bright-violet),
+		var(--bright-fushia),
+		var(--orange)
+	);
+	cursor: pointer;
+}
+
+.helper {
+	position: relative;
+}
+
+.line1 {
+	position: absolute;
+	top: -2.5rem;
+	right: 5rem;
+	height: 2rem;
+}
+
+/********** HERO IMAGE STYLES **********/
+
+.small-hero {
+	/* padding: 0 1.5rem; */
+	margin-bottom: 5.6rem;
+	width: 100%;
+}
+
+.large-hero {
+	display: none;
+}
+
+/********** ASIDE STYLES **********/
+
+.extra-details {
+	margin-bottom: 23rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.box p:first-child {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+.box p:last-child {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+/********** TESTIMONIAL STYLES **********/
+
+.testimonial {
+	padding-top: 25rem;
+	padding-bottom: 6.4rem;
+	color: var(--white);
+	background-color: var(--dark-blue);
+	text-align: center;
+	border-radius: 15px;
+	position: relative;
+}
+
+.test-heading {
+	margin-bottom: 4rem;
+	font-size: 4rem;
+}
+
+.test-heading span {
+	font-weight: 400;
+}
+
+.test-quote {
+	padding: 0 2rem;
+	margin-bottom: 5rem;
+	color: var(--light-beige);
+	font-size: 1.8rem;
+	line-height: 1.9;
+}
+
+.author-box {
+	text-transform: uppercase;
+}
+
+.author-box p:first-child {
+	margin-bottom: 1.5rem;
+	font-size: 1.7rem;
+	font-weight: 700;
+}
+
+.author-box p:last-child {
+	font-size: 1.6rem;
+	color: var(--light-beige);
+}
+
+.jeremy-small {
+	position: absolute;
+	top: -180px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.line2 {
+	height: 40px;
+	margin-bottom: 3rem;
+}
+
+.jeremy-large {
+	display: none;
+}
+
+/********** FOOTER STYLES **********/
+
+.footer {
+	padding: 8rem 0 8rem;
+	width: 100%;
+	background-color: var(--light-beige);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -1rem;
+}
+
+.footer-logo {
+	margin-bottom: 4.3rem;
+}
+
+.footer p {
+	margin-bottom: 4.3rem;
+	font-size: 1.4rem;
+}
+
+.logos {
+	display: flex;
+	gap: 25px;
+}
+
+.icon {
+	cursor: pointer;
+}
+
+/********** TABLET STYLES **********/
+
+@media screen and (min-width: 768px) {
+	/********** MAIN STYLES **********/
+
+	body {
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+
+	.nav,
+	.header,
+	.aside,
+	.testimonial {
+		max-width: 768px;
+	}
+
+	.nav,
+	.header,
+	.footer {
+		padding-right: 3rem;
+		padding-left: 3rem;
+	}
+
+	/********** NAVBAR STYLES **********/
+
+	.nav-button {
+		font-size: 1.5rem;
+	}
+
+	/********** HEADER STYLES **********/
+
+	.header {
+		position: relative;
+	}
+
+	.header-content {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		max-width: 500px;
+	}
+
+	.heading {
+		font-size: 5.5rem;
+	}
+
+	.header-description {
+		max-width: 350px;
+	}
+
+	/********** ASIDE STYLES **********/
+
+	.extra-details {
+		margin-bottom: 1rem;
+		flex-direction: row;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	/********** HERO IMAGE STYLES **********/
+
+	.hero-images {
+		margin-bottom: 9rem;
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.small-hero {
+		display: none;
+	}
+
+	.large-hero {
+		display: block;
+	}
+
+	/********** TESTIMONIAL STYLES **********/
+
+	.testimonial {
+		margin: 0 3rem;
+		/* position: relative; */
+		top: 20%;
+		margin-top: -15rem;
+	}
+
+	.test-quote {
+		padding: 0 7rem;
+	}
+
+	.line1 {
+		height: 3rem;
+		top: -4rem;
+	}
+
+	/********** FOOTER STYLES **********/
+
+	.footer {
+		padding-top: 50rem;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.footer p,
+	.footer-logo {
+		margin-bottom: 0;
+	}
+}
+
+/********** DESKTOP STYLES **********/
+
+@media screen and (min-width: 1440px) {
+	/********** MAIN STYLES **********/
+	.container {
+		width: 100vw;
+		padding-top: 5rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.nav,
+	.header,
+	.aside {
+		padding: 0 15rem;
+	}
+
+	.button {
+		font-size: 1.8rem;
+	}
+
+	/********** NAVBAR STYLES **********/
+
+	.nav {
+		grid-column: 1 / -1;
+		min-width: 100%;
+	}
+
+	/********** HEADER STYLES **********/
+
+	.header {
+		grid-column: 1 / 3;
+		padding-right: 0;
+		margin-bottom: 5rem;
+	}
+
+	.header-content {
+		max-width: 650px;
+	}
+
+	.heading {
+		font-size: 7rem;
+	}
+
+	.header-description {
+		font-size: 2rem;
+		max-width: 400px;
+		margin-bottom: 5rem;
+	}
+
+	.line1 {
+		height: 35px;
+		top: -5rem;
+		right: 10rem;
+	}
+
+	/********** ASIDE STYLES **********/
+
+	.extra-details {
+		flex-direction: column;
+		gap: 70px;
+		padding-right: 10rem;
+	}
+
+	/********** TESTIMONIAL STYLES **********/
+
+	.testimonial {
+		padding: 0;
+		margin: 1rem 15rem 0;
+		top: 0;
+		max-width: 100%;
+		grid-column: 1 / -1;
+		position: relative;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-around;
+		text-align: left;
+	}
+
+	.testimonial div:first-child {
+		max-width: 340px;
+		margin-top: 10rem;
+	}
+
+	.test-quote {
+		padding: 0;
+	}
+
+	.line2 {
+		height: 60px;
+		position: absolute;
+		top: 30%;
+		left: 48%;
+	}
+
+	.jeremy-small {
+		display: none;
+	}
+
+	.jeremy-large {
+		display: block;
+		position: relative;
+		margin-top: -5rem;
+	}
+
+	/********** FOOTER STYLES **********/
+
+	.footer {
+		position: relative;
+		margin-top: -28rem;
+		padding: 38rem 15rem 8rem;
+		grid-column: 1 / -1;
+		z-index: -1;
+	}
+
+	.box {
+		align-items: flex-start;
+	}
+
+	.box p:first-child {
+		font-size: 5rem;
+	}
+}
