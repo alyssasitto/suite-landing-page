@@ -368,8 +368,14 @@ body {
 
 @media screen and (min-width: 1440px) {
 	/********** MAIN STYLES **********/
+
+	body {
+		min-height: 100vh;
+	}
+
 	.container {
 		width: 100vw;
+		max-width: 1780px;
 		padding-top: 5rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
@@ -423,9 +429,12 @@ body {
 	/********** ASIDE STYLES **********/
 
 	.extra-details {
+		position: relative;
 		flex-direction: column;
 		gap: 70px;
 		padding-right: 10rem;
+		bottom: 50%;
+		transform: translate(0, 80%);
 	}
 
 	/********** TESTIMONIAL STYLES **********/
@@ -474,7 +483,7 @@ body {
 	.footer {
 		position: relative;
 		margin-top: -28rem;
-		padding: 38rem 15rem 8rem;
+		padding: 38rem 15rem 5rem;
 		grid-column: 1 / -1;
 		z-index: -1;
 	}
