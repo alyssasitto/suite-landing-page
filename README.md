@@ -10,7 +10,7 @@
 
 ### Screenshot
 
-![](images/suite-lp-ss.png)
+![](images/suite-landing-ss.png)
 
 ### Links
 
